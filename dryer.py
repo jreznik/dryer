@@ -9,7 +9,7 @@ def main():
     wlan.active(True)
     wlan.connect('Fake-SSID', 'fake-password')
 
-    d = dht.DHT11(machine.Pin(3))
+    d = dht.DHT11(machine.Pin(2))
 
     def http_get(url):
         _, _, host, path = url.split('/', 3)
